@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-LINK=${1?Error: no repo link given}
-COMMIT=${2?Error: no commit type given}
-git init
-git add .
-git commit -am $COMMIT
-git remote add origin $LINK
-git push -u origin master
